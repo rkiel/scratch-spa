@@ -6,7 +6,7 @@ Create the project
 
 ```unix
 cd ~/GitHub/rkiel
-git clone git@github.com:rkiel/scratch.git
+git clone git@github.com:rkiel/scratch-spa.git
 cd scratch
 ```
 
@@ -58,4 +58,3 @@ vagrant ssh aws
 
 cd /vagrant
 ```
-

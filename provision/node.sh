@@ -5,8 +5,8 @@ echo "Installing node"
 echo "  updating"
 apt-get update >/dev/null 2>&1
 
-echo "setup for Node 4"
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+echo "setup for Node 6"
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 echo "  installing node.js"
 apt-get install -y nodejs >/dev/null 2>&1

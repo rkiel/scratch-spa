@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-active = [:aws]
+active = [:spa]
 
 # PROVISION: runs as 'root' by default; append '-' at the end to run as 'vagrant'
 
@@ -13,6 +13,7 @@ servers = {
   pg:      {type: :sql,         provision: %w{postgresql_server} },
   mongo:   {type: :nosql,       provision: %w{mongodb_server} },
   aws:     {type: :aws,         provision: %w{rvm- aws-} },
+  spa:     {type: :aws,         provision: %w{rvm- aws- node} },
   heroku:  {type: :heroku,      provision: %w{rvm- heroku- ssh-} },
   netlify: {type: :javascript,  provision: %w{node netlify} },
   node:    {type: :javascript,  provision: %w{node mongodb_client} },
